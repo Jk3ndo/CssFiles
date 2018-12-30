@@ -1,0 +1,521 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Condensed", Tahoma, Geneva, sans-serif;
+    margin: 0;
+    color: #86939e;
+    overflow-y: scroll;
+	hyphens: auto;
+}
+
+#myCarousel img{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+iframe {
+    border: 0;
+}
+
+.media {
+    max-width: 400px;
+    width: 100%;
+}
+
+.page {
+    display: none;
+}
+
+.page.activeTab {
+    display: block;
+}
+
+.tabs {
+    font-size: 0;
+    width: 100%;
+}
+
+.tab{
+    text-transform: uppercase;
+    border-left: 5px solid white;
+    padding: 10px;
+    width: calc(100% / 3);
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    background-color: lightgrey;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.tab-4{
+    width: calc(100% / 4) !important;
+}
+
+.tab:first-child{
+    border-left: none;
+}
+
+.tab:hover, .tab.activeTab {
+    background-color: grey;
+    color: white;
+}
+
+.nav {
+    padding: 0.7em 0.5em !important;
+	display: inherit !important;
+}
+
+.nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 75em;
+    padding: 1em 1em 2em;
+    margin: 0 auto;
+}
+
+.editor h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #26328c
+}
+
+.editor h3 {
+    font-size: 24px;
+    color: #45a0c2;
+}
+
+.editor h4 {
+    font-size: 18px;
+}
+
+.body {
+    min-height: calc(100vh - 600px);
+}
+
+.hidden {
+    display: none !important;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .save-the-date {
+        margin-top: 30% !important;
+    }
+}
+
+.footer {
+    background-color: #1a1c27;
+    border-top: 1px solid #39444e;
+    font-size: 13px;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+    font-weight: normal;    
+    font-style: normal;    
+}
+
+a.symposium {
+	text-decoration: inherit;
+    color: #009999;
+    font-weight: normal;    
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+a img {
+    border: 0;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .tab {
+        display: block !important;
+        width: 100% !important;
+        border: none !important;
+    }
+}
+
+.navigation-expand{
+    display: none;
+
+    float: right;
+    vertical-align: middle;
+    margin-top: 1.5em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.navigation-header {
+    display: inline-block;
+}
+
+.navigation-header img {
+    max-width: 200px;
+}
+
+.navigation-links {
+    text-transform: uppercase;
+    list-style: none;
+    float: right;
+    margin: 0;
+    margin-top: 2.5em;
+
+    transition: all 0s ease 0s;
+}
+
+.navigation-links ul {
+    padding: 0;
+}
+
+.navigation-links li {
+    display: inline-block;
+    padding: 0 1em;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navigation-links li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation-links li a:hover {
+    color: #18a99e;
+}
+
+@media screen and (max-width: 1024px){
+    .header {
+        background-position: center center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav {
+        text-align: center;
+    }
+    
+    .navigation-links {
+        margin: 0.2em 0;
+        width: 100%;
+        float: none;
+        padding: 0;
+        display: none;
+    }
+
+    .active {
+        display: block !important;
+    }
+
+    .navigation-links li {
+        display: block;
+        padding: 0.5em 0;
+        width: 100%;
+    }
+
+    .navigation-header {
+        text-align: left !important;
+        margin-left: 1em;
+        display: block;
+    }      
+
+    .navigation-expand {
+        display: inline-block;
+    }
+
+    .column {
+        width: 100%!important;
+        display: block!important;
+        padding: 0!important;
+    }
+}
+
+/** Rows **/
+.row {
+    font-size: 0;
+}
+.column {
+    border: 0!important;
+    vertical-align: top;
+    font-size: 16px;
+    width: 50%;
+    display: inline-block;
+}
+.column:nth-child(odd){
+    padding-right: 10px;
+}
+.column:nth-child(even){
+    padding-left: 10px;
+}
+
+/** Carousel **/
+.slick-carousel img {
+    width: calc(100vw / 3);
+    height: auto;
+    border-radius: 15px;
+    padding: 10px;
+}
+.slick-carousel {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.slick-slide  {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+}
+
+.slick-center  {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    -moz-filter: brightness(100%);
+}
+
+@media screen and (max-width: 768px){
+    .slick-carousel img {
+        width: 100%;
+    }
+}
+
+		/* BO Symposium Style */
+html {
+  box-sizing: border-box;
+} 
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-speaker {
+  position: relative;
+  width: 100%;
+  box-shadow: 2px 2px 2px 2px blur-radius:0 grey;
+}
+
+.container-speaker img {
+  box-shadow: 0 5px 10px -2px grey;
+	/* border-radius: 15%; */
+	} 
+
+.container-speaker::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  font-size:1.2em;
+}
+
+.titlec {
+  color: grey;
+  font-size:2.85em;
+}
+
+.title2 {
+  font-family: "Roboto Condensed";
+  color: black;
+  font-size:2.35em;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  font-family: "Roboto Condensed", Tahoma, Geneva, sans-serif;
+  opacity: 0.85;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  overflow: hidden;
+}
+
+.container-speaker:hover .overlay {
+  height: 100%;
+}
+
+.overlay-text {
+  color: black;
+  font-size:0.35em;
+  font-family: "Roboto Condensed", Tahoma, Geneva, sans-serif;
+  position: absolute;
+  top: 50%;
+  left:10%;
+  -webkit-transform: translate(-10%, -50%);
+  -ms-transform: translate(-10%, -50%);
+  transform: translate(-10%, -50%);
+  text-align: left;
+}
+
+.container-speaker-textbox {
+  padding: 0 10px;
+} 
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }  
+}
+ 				
+/* Colors */ 
+
+.color-primary-0 { background-color: #2FB2AD; color:#FFFFFF; }	/* Main Primary color - turqoise*/
+.color-primary-1 { background-color: #B6FCF9; color:#FFFFFF; }
+.color-primary-2 { background-color: #FFFFFF; color:#86939e; border: 1px solid #2FB2AD; }
+.color-primary-3 { background-color: #007975; color:#FFFFFF; }
+.color-primary-4 { background-color: #006561; color:#FFFFFF; }
+
+.color-secondary-1-0 { background-color: #4068BE; color:#FFFFFF; }	/* Main Secondary color (1) - blue */
+.color-secondary-1-1 { background-color: #BDD1FC; color:#FFFFFF; }
+.color-secondary-1-2 { background-color: #FFFFFF; color:#86939e; border: 1px solid #4068BE; }
+.color-secondary-1-3 { background-color: #052E86; color:#FFFFFF; }
+.color-secondary-1-4 { background-color: #01246F; color:#FFFFFF; }
+
+.color-secondary-2-0 { background-color: #FFBF43; color:#FFFFFF; }	/* Main Secondary color (2) - yellow */ 
+.color-secondary-2-1 { background-color: #FFE7B8; color:#FFFFFF; }
+.color-secondary-2-2 { background-color: #FFFFFF; color:#86939e; border: 1px solid #FFBF43; }
+.color-secondary-2-3 { background-color: #C88400; color:#FFFFFF; }
+.color-secondary-2-4 { background-color: #A76E00; color:#FFFFFF; }
+
+.color-complement-0 { background-color: #FF9743; color:#FFFFFF; }	/* Main Complement color - orange */
+.color-complement-1 { background-color: #FFD8B8; color:#FFFFFF; }
+.color-complement-2 { background-color: #FFFFFF; color:#86939e; border: 1px solid #FF9743; }
+.color-complement-3 { background-color: #C85900; color:#FFFFFF; }
+.color-complement-4 { background-color: #A74A00; color:#FFFFFF; }
+
+.color-tech-forum-day-1 { background-image: linear-gradient(to bottom right, #2FB2AD 50%, #FF9743 50%); color:#FFFFFF; }
+
+.agenda-bottom-border { border-bottom: #dcdcdc solid 1px; }
+
+.pause        {background-color: #808080; color: #FFFFFF; }
+
+.pause-stripes {text-align:center; background-color: #F5F5F5; background-image: repeating-linear-gradient(135deg, transparent, transparent 15px, rgba(255,255,255,.5) 15px, rgba(255,255,255,.5) 30px); color: #86939e; text-shadow: 0 0 0.5em #ffffff; border: 1px solid #dcdcdc;}
+
+.pause-stripes-healthcare {text-align:center; background-color: #f5f5f5; background-image: repeating-linear-gradient(135deg, transparent, transparent 15px, rgba(255,255,255,.5) 15px, rgba(255,255,255,.5) 30px); color: #86939e; text-shadow: 0 0 0.5em #ffffff; border: 1px solid #2FB2AD;}
+
+.pause-healthcare { background-color: #F5F5F5; border: 1px solid #2FB2AD; }
+
+/* Style for <details> and <summary> */
+
+/* <details> and <summary> are block level elements */
+details, summary { display: block; }
+
+/* The following styles will only get applied if JavaScript is enabled and <details> is not natively supported */
+
+/* Add focus styles (for keyboard accessibility) */
+.no-details summary:hover, .no-details summary:focus { background: none; }
+
+/* The following styles are not really needed, since the jQuery script takes care of hiding/displaying the elements. */
+/* However, we&rsquo;re still gonna use CSS as well to prevent FOUC in browsers that understand these selectors. */
+/* Remember: by default (and probably most of the time), the contents of the <details> element are hidden. */
+
+/* Hide all direct descendants of every <details> element */
+/* Note that IE6 doesn&rsquo;t support the child selector; we&rsquo;ll work around that using jQuery later */
+.no-details details > * { display: none; }
+
+/* Make sure summary remains visible */
+.no-details details summary { display: block; }
+
+/* Apply a pointer cursor upon hover to indicate it&rsquo;s a clickable element. These styles can be applied regardless of whether the fallback is needed */
+summary { cursor: pointer; }	
+
+details > summary:first-of-type:hover {
+    color:#00ABAA;
+    text-decoration: underline;
+	cursor:pointer;
+}
+details > summary:first-of-type {
+    list-style-type: none;    
+}
+
+summary:focus { 
+				outline:0 !important; 	/* hides the blue borderin chrome, once clicked */				
+}
+
+details[open] summary {
+    color:#00ABAA; /* applies a color to "summary" to indicate link */ 
+    text-decoration: underline;
+}
+
+/* Specific for Healthcare Forum */
+
+details > summary.summary_hc:first-of-type:hover {
+    color:#FFFFFF;
+    text-decoration: underline;
+	cursor:pointer;
+}
+
+
+details[open] summary.summary_hc {
+    color:#FFFFFF; /* applies a color to "summary" to indicate link */ 
+    text-decoration: underline;
+}
+
+		
+		/* EO Symposium Style */
