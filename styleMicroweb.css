@@ -373,7 +373,6 @@ padding: 30px 0;
     content: '';
     top: 15px;
     background: url(https://dach.intersystems.de/l/61432/2019-03-13/g1zj5w/61432/207970/tag_left.png);
-    width: 35px;
     left: 0;
     bottom: 0;
     background-repeat: no-repeat;
@@ -383,7 +382,7 @@ padding: 30px 0;
 .banner-text h1 span:last-child {
     right: 0;
     left: unset;
-    background: url(https://storage.pardot.com/61432/208038/Vector_Smart_Object_copy_8.png) ;
+    background: url(https://dach.intersystems.de/l/61432/2019-03-13/g1zj5t/61432/207972/tag_right.png) ;
     background-size: cover;
 }
 .banner-text h1 {
