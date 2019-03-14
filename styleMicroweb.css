@@ -371,7 +371,7 @@ padding: 30px 0;
 .banner-text h1 span {
     position: absolute;
     content: '';
-    top: 15px;
+    top: 35px;
     background: url(https://dach.intersystems.de/l/61432/2019-03-13/g1zj5w/61432/207970/tag_left.png);
     width: 15px;
     left: 0;
@@ -381,14 +381,7 @@ padding: 30px 0;
 }
 
 .banner-text h1 span:last-child {
-    position: absolute;
-    content: '';
-    top: 15px;
-    right: 0;
-    left: unset;
     background: url(https://dach.intersystems.de/l/61432/2019-03-13/g1zj5t/61432/207972/tag_right.png);
-    bottom: 0;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 .banner-text h1 {
