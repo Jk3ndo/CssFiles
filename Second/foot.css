@@ -1,0 +1,172 @@
+.footer-area {
+  padding: 0px !important;
+  margin-top: 25rem;
+}
+
+.footer-head {
+  position: relative;
+  height: 8rem;
+  background-image: url("../img/images/bg-footer.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.footer-logo {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.footer-logo-img {
+  position: relative;
+  height: auto;
+  width: 15%;
+  margin-left: 42.5%;
+  margin-right: 42.5%;
+}
+
+.footer-content {
+  padding-top: 5rem;
+  background-color: #3a444e;
+  width: 200%;
+  margin-top: -300px;
+}
+
+.footer-content .card-container {
+  padding: 0rem 3rem 5rem 5rem;
+}
+
+.footer-content .card-container h3 {
+  position: relative;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.8px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.7rem;
+}
+
+.footer-content .card-container h4 {
+  position: relative;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.footer-content .card-container input {
+  position: relative;
+  height: 2.4rem;
+  width: 100%;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.footer-content .card-container input:focus {
+  outline: none;
+}
+
+.footer-content .card-container .content-btn {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+  background-color: #302b94;
+  border: none;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 1rem;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.footer-content .card-container .content-btn > i {
+  position: relative;
+  float: right;
+  color: #fff;
+  margin-top: 0.2rem;
+  margin-right: 0.5rem;
+  font-weight: 200;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-content .card-container .content-btn:hover > i {
+  margin-right: 0.2rem;
+}
+
+.footer-content .card-container p {
+  color: #87939e;
+  font-size: 1rem;
+  font-weight: 400;
+  font-weight: 500;
+}
+
+.footer-content .card-container .social-logo {
+  height: auto;
+  width: 95%;
+}
+
+.footer-content ul > li > a {
+  font-size: 1rem;
+  color: #87939e;
+  font-weight: 500;
+}
+
+.footer-content ul > li > a:hover {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Ressponive */
+@media (max-width: 991px) {
+  #video-carousel-title {
+    margin-left: 2rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .footer-head {
+    height: 7rem;
+    margin-bottom: -3rem;
+  }
+
+  .footer-logo {
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  .footer-logo-img {
+    position: relative;
+    height: auto;
+    width: 5%;
+    margin-left: 47.5%;
+    margin-right: 47.5%;
+  }
+}
+
+.section-gap {
+  padding: 120px 0;
+}
+
+.triangle {
+    width: 90%;
+    height: 90%;
+    border-left: 680px solid transparent;
+    border-right: 680px solid transparent;
+    border-bottom: 300px solid #3a444e;
+    margin-left: 2px;
+    margin-top: -348px;
+}
