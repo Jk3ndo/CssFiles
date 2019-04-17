@@ -3436,7 +3436,7 @@ hr {
 
 .footer-area {
   padding: 0px !important;
-  margin-top: 7rem;
+  margin-top: 25rem;
 }
 
 .footer-head {
@@ -3463,6 +3463,7 @@ hr {
 .footer-content {
   padding-top: 5rem;
   background-color: #3a444e;
+  margin-top: 0px;
 }
 
 .footer-content .card-container {
